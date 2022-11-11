@@ -1,0 +1,157 @@
+*,
+html{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:17px;
+    line-height: 1.5;
+}
+body{
+    display:flex;
+    flex-direction:column;
+    min-height: 100vh;
+    background-color:#a7d4d5
+}
+nav{
+    background-color:#f5f0ea; 
+    flex-grow: 1;
+}
+.container{
+    background-color: rgb(156, 235, 236);
+    flex-grow:3;
+}
+main{
+    display:flex;
+    flex-direction: column;
+}
+main section{
+    flex-grow:2;
+}
+main section article{
+    background-color: #a7d4d5;
+    min-height: 60vh;
+}
+main aside{
+    background-color: rgb(192, 239, 180);
+    flex-grow:1;
+    flex-direction: column;
+}
+header,
+footer{
+    height: 20vh;
+}
+nav,
+header,
+article,
+aside,
+footer{
+    padding: 1vh 1vw;
+}
+footer{
+    padding: 1vw 1vh;
+}
+.myForm{
+    margin:2vh 2vw;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(226, 216, 216);
+    border-radius:10px;
+    padding: 2vh 2vw;
+}
+.message{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    order:1;
+}
+.message > textarea{
+    width: 100%;
+    min-height: 150px;
+    margin-bottom: 1vh;
+}
+.contact{
+    display:flex;
+    flex-direction: column;
+}
+.contact > input{
+    width: 100%;
+    margin-right: 1vw;
+    margin-bottom: 2vh;
+}
+input,textarea{ /*isso pode ser padrão acessibilidade*/
+    padding:1vh 1vw;
+    border: none;
+    border-radius: 5px;
+}
+/*input:required,
+textarea:required{isso para obrigar preenchimento e pontuar se preenchido errado
+    border: 2px solid rgb(73, 4, 129);
+    border-radius: 5px;
+}*/
+input:focus,
+textarea:focus{/*isso para obrigar preenchimento e pontuar se preenchido errado*/
+    background-color: rgb(235, 160, 238);
+    width: 100%; /*amplia qndo esta no espaço*/
+}
+input:invalid,
+textarea:invalid{/*isso para obrigar preenchimento e pontuar se preenchido errado, é um pouco tonto porque vazio fica vermelho pq são requeridos e não são vlidos se branco*/
+    border: 2px solid #1af0f8;
+}
+input:valid,
+textarea:valid{/* pontuar se preenchido  certo, e os não obrigatórios vão aparecer verde*/
+    border: 2px solid  #1af0f8;
+}
+button{
+    width:45%;
+    display:flex;
+    color:white;
+    justify-content: space-around;
+}
+.botones{
+    display:flex;
+    justify-content: space-around;
+    font-size:14px; 
+    border:none;
+    
+    
+}    
+button.borrar{
+    background-color: rgb(153, 78, 78);
+    border-radius: 30px;
+    width: 200px;
+    height: 54px;
+    padding:12px 0px;
+}
+button.enviar{
+    background-color: rgb(105, 205, 139);
+    border-radius: 30px;
+    width: 200px;
+    height: 54px;
+    padding:12px 0px;
+}
+button:hover{
+    cursor:pointer;
+    background-color:grey;
+}
+
+@media screen and (min-width:768px){
+    body{
+            flex-direction:row; 
+        }
+    main{
+            flex-direction:row;
+        }
+    .myForm{
+            flex-direction:row;
+        }
+    .message{
+            width:40%;
+        }
+    .contact{
+            width:60%;
+        }
+    .contact > input{
+            width: 90%;
+        }
+}
