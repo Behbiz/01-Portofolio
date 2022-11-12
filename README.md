@@ -10,3 +10,4 @@ Cuenta tambien con una imagen responsiva y animaciones con las nubes, y aun una 
 
 Cuenta con un footer, sin iconos, pero con hiperlinks de redirecionamiento.
 
+Autor del Proyecto: Isabel Castro- Alumna KeepCoding
