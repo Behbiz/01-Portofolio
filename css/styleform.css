@@ -17,6 +17,14 @@ nav{
     background-color:#f5f0ea; 
     flex-grow: 1;
 }
+h1{
+    color:#1f8888;
+    margin:30px auto 30px auto;
+}
+h2{
+    color:#1f8888;
+    font-family:"Montserrat", sans-serif;
+}
 .container{
     background-color: rgb(156, 235, 236);
     flex-grow:3;
@@ -79,28 +87,23 @@ footer{
     margin-right: 1vw;
     margin-bottom: 2vh;
 }
-input,textarea{ /*isso pode ser padrão acessibilidade*/
+input,textarea{
     padding:1vh 1vw;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
 }
-/*input:required,
-textarea:required{isso para obrigar preenchimento e pontuar se preenchido errado
-    border: 2px solid rgb(73, 4, 129);
-    border-radius: 5px;
-}*/
 input:focus,
-textarea:focus{/*isso para obrigar preenchimento e pontuar se preenchido errado*/
-    background-color: rgb(235, 160, 238);
-    width: 100%; /*amplia qndo esta no espaço*/
+textarea:focus{
+    border-radius: 5px;
+    width: 100%; 
 }
 input:invalid,
-textarea:invalid{/*isso para obrigar preenchimento e pontuar se preenchido errado, é um pouco tonto porque vazio fica vermelho pq são requeridos e não são vlidos se branco*/
-    border: 2px solid #1af0f8;
+textarea:invalid{
+    border: 2px solid rgb(148, 242, 148);
 }
 input:valid,
-textarea:valid{/* pontuar se preenchido  certo, e os não obrigatórios vão aparecer verde*/
-    border: 2px solid  #1af0f8;
+textarea:valid{
+    border: 2px solid  rgb(148, 242, 148);
 }
 button{
     width:45%;
@@ -117,23 +120,36 @@ button{
     
 }    
 button.borrar{
-    background-color: rgb(153, 78, 78);
+    color:crimson;
+    background-color:#f7fafd;
+    border: 3.5px solid crimson;
+    font-size: 18px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:50px;
+    width:200px;
     border-radius: 30px;
-    width: 200px;
-    height: 54px;
-    padding:12px 0px;
+    margin-bottom: 13px; 
+    
+}   
+button:hover {
+    transform: scale(1.05);
 }
 button.enviar{
-    background-color: rgb(105, 205, 139);
+    color:rgb(40, 161, 40);
+    background-color:#f7fafd;
+    border: 3.5px solid rgb(40, 161, 40);
+    font-size: 18px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:50px;
+    width:200px;
     border-radius: 30px;
-    width: 200px;
-    height: 54px;
-    padding:12px 0px;
-}
-button:hover{
-    cursor:pointer;
-    background-color:grey;
-}
+    margin-bottom: 13px;
+} 
+
 
 @media screen and (min-width:768px){
     body{
@@ -143,7 +159,7 @@ button:hover{
             flex-direction:row;
         }
     .myForm{
-            flex-direction:row;
+            flex-direction:row ;
         }
     .message{
             width:40%;
