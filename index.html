@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isabel's Personal site'</title>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'> 
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <!--BODY PARA IPHONE-->
 <body>
-    <header class="respmenu">
+    <header>
         <nav>
              <label for="showmenu" class="showmenu">&equiv;</label>
              <input type="checkbox" id="showmenu" name="showmenu">
@@ -26,8 +27,8 @@
         <img class="top-cloud" alt="cloud" src="./assets/image/cloud.png" alt="">
         <img class="medium2-cloud" alt="cloud"src="./assets/image/cloud.png">
         <img class="medium-cloud" alt="cloud" src="./assets/image/cloud.png">
-        <h1>Yo soy Isabel Castro.</h1>
-        <h4>Front End Developer Junior</h4><p><strong>| HTML | CSS | JavaScript | Python | PHP | Bootstrap | WordPress</strong></p>
+        <h1>Yo soy Isabel</h1>
+        <h4>Front End Developer Student</h4><p><strong>HTML | CSS | JavaScript | Python | PHP | Bootstrap | WordPress</strong></p>
         <img class="bottom-cloud" alt="cloud" src="./assets/image/cloud.png">
         <img class="montain" alt="montain" src="./assets/image/mountain.png">
     </div>    
@@ -43,26 +44,29 @@
 <!--SECTION FORMACION-->
     <section class="container-degree">
     <div>
+        <h2>Formación:</h2> 
             <img class="degree-img" src="./assets/image/degree.png" alt="code img">
-            <h2>Formación:</h2>    
-            <div class="degree">
+            
+            <div class="degree-txt">
                 <p>Bootcamp Mujeres Tech - KeepCoding & Glovo. Conclusión en 03-2023</p>
                 <p>Bootcamp Full Stack - Factoria F5. Conclusión en 03-2023</p>
-                <p>Produción Cientifica - Universidad de Barcelona<a href="https://www.linkedin.com/in/isabel-santos-castro-/overlay/1635494164689/single-media-viewer/">Panoptico Digital: el impacto de la inteligencia artificial y las nuevas tecnologías en el sistema penitenciario</a> - </p>
+                <p>Produción Cientifica - Universidad de Barcelona: <a href="https://www.linkedin.com/in/isabel-santos-castro-/overlay/1635494164689/single-media-viewer/">Panoptico Digital: el impacto de la inteligencia artificial y las nuevas tecnologías en el sistema penitenciario</a> Publicada en ago/22.</p>
                 <p>Formación Ocupacional en Desarollo FrontEnd - The Corner Centre d'Estudios</p>
                 <p>Postgrado en Derecho Publico y Gestion Municipal - Fundación Cesar Montes</p>
                 <p>Bacharelado en Derecho - UniJorge</p>
                 <p>Juez de Arbitraje, Mediación y Resolución de Conflictos - IBMEC</p>
-                </div>
+            </div>
+        
     </div>
     </section>
 <!--SECTION HABILIDADES-->
-<div class="container-skill">
+<section class="container-skill">
+    <div>
     <h2>Habilidades Digitales</h2>
-        <div class="rowImg">
+        
         <img class="code-img" src="./assets/image/computer.png" alt="code img">
-        </div>
-        <div class="rowskill">
+       
+       
             <ul id="skill">
 	            <li class="liSkill"><span class="bar graphic-design"></span><h3 class="h3-Skill">Diseño Gráfico</h3></li>
 	            <li class="liSkill"><span class="bar html-css"></span><h3 class="h3-Skill">Html5 // Css3</h3></li>
@@ -70,7 +74,9 @@
 	            <li class="liSkill"><span class="bar wordpress"></span><h3 class="h3-Skill">Wordpress</h3></li>
             </ul>
         </div>
-</div>
+    
+</section>
+
 <!--SECTION EXPERIENCE-->
 <div class="experience">
    <h2 class="experience">Experiencias laborales:</h2> 
@@ -106,14 +112,13 @@
        </table> 
 </div>
 <!--PIE DE PAGINA-->
-<footer>
+<footer class="bottom-container">
     <h3 class="footer">Rede Sociales:</h3>
-    <div class="bottom-container">
-        <a class="footer-link" href="https://www.linkedin.com/mwlite/in/isabel-santos-castro-">LinkedIn</a>
-        <a class="footer-link" href="http://">Twitter</a>
-        <a class="footer-link" href="http://github.com/Behbiz">GitHub</a>
-        <br>
-        <a class="copyright"> Copyright-2022, Isabel Castro - Behbiz</a>
+    <div >
+        <a  href="https://www.linkedin.com/mwlite/in/isabel-santos-castro-" target="_blank"><img alt="" class="footer-link" src="./assets/image/linkedin_icon-icons.com_65929.png"></a>
+        <a  href="http://github.com/Behbiz" target="_blank"><img class="footer-link" alt ="" src="./assets/image/logo_github_icon_143196.png"></a>
+       <br>
+        <p class="copyright"> Copyright-2022, Isabel Castro - Behbiz</p>
         
     </div>
 </footer>

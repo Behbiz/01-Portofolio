@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Isabel's Personal site'</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Isabel's Personal Formulário'</title>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'> 
     <link rel="stylesheet" href="./css/styleform.css">
 </head>
 <body>
@@ -30,32 +30,31 @@
                                 <p>isabelcastrobcn@gmail.com</p>
                                 <label for="msg">Messagem</label>
                                 <textarea id="msg"></textarea>
-                            <div class="botones">     
-                                <button class="enviar" type="submit"> Enviar Formulário</button>
-                                <button class="borrar" type="reset"><a href="./index.html" style="text-decoration:none">Volver al Portofolio</button></a>
-                            </div>
+                           
                         </div>  
                           
                                 <div class="contact">
                                 <label for="name"> Nombre</label>   
-                                <input type="text" id="name" name="name" required>
+                                <input type="text" id="name" name="name" required pattern="[A-Za-zÀ-ÿ ]{2,20}">  <!--podriamos poner autofocus, más no voy poner por estilo-->
 
                                 <label for="email"> Correo Eletrónico</label>   
-                                <input type="email" id="email" name="email" required>
+                                <input type="email" id="email" name="email"  name="correo" value="" placeholder="johnsantos@exemplo.com" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,9}" required>
                         
                                 <label for="telefono"> Teléfono</label>   
-                                <input type="text" id="telefono" name="telefono"pattern="\d{9}">
+                                <input type="text" id="telefono" name="telefono" pattern="\d{9}">
                                 <h2> Como me conocistes?</h2>
                                 <label for="KeepCoding"> <input type="radio" name="webmaster" value="KeepCoding"/>   KeepCoding </label>   
-                                 
-                                <label for="Linkedin"> <input type="radio" name="webmaster" value="Linkedin"/>   Linkedin </label> 
-                               
+                                <label for="Linkedin"> <input type="radio" name="webmaster" value="Linkedin"/>   Linkedin </label>
                                 <label for="GitHub"> <input type="radio" name="webmaster" value="GitHub"/>    GitHub </label> 
                                 
-                                
                             </div>
+                         
                             
                         </form>
+                        <div class="botones">     
+                            <button class="enviar" type="submit"> Enviar Formulário</button>
+                            <button class="borrar" type="reset"><a href="./index.html" style="text-decoration:none">Volver al Portofolio</button></a>
+                        </div>
                         </article>
                         </section>
                         <aside>Aside</aside>

@@ -3,7 +3,7 @@ html{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Sofia';
     font-size:17px;
     line-height: 1.5;
 }
@@ -19,11 +19,15 @@ nav{
 }
 h1{
     color:#1f8888;
+    font-size: 3rem;
     margin:30px auto 30px auto;
 }
 h2{
     color:#1f8888;
     font-family:"Montserrat", sans-serif;
+}
+label, p{
+    color:#1f8888;
 }
 .container{
     background-color: rgb(156, 235, 236);
@@ -37,11 +41,11 @@ main section{
     flex-grow:2;
 }
 main section article{
-    background-color: #a7d4d5;
+    background-color: #c0ebeb;
     min-height: 60vh;
 }
 main aside{
-    background-color: rgb(192, 239, 180);
+    background-color: rgb(213, 252, 203);
     flex-grow:1;
     flex-direction: column;
 }
@@ -62,7 +66,7 @@ footer{
 .myForm{
     margin:2vh 2vw;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     border: 1px solid rgb(226, 216, 216);
     border-radius:10px;
     padding: 2vh 2vw;
